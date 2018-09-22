@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "papnai-app": {
+    "anf-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/papnai-app",
+            "outputPath": "dist/anf-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "papnai-app:build"
+            "browserTarget": "anf-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "papnai-app:build:production"
+              "browserTarget": "anf-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "papnai-app:build"
+            "browserTarget": "anf-app:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "papnai-app-e2e": {
+    "anf-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "targets": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "papnai-app:serve"
+            "devServerTarget": "anf-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "papnai-app:serve:production"
+              "devServerTarget": "anf-app:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "papnai-app"
+  "defaultProject": "anf-app"
 }

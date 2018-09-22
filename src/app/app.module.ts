@@ -1,29 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { DictaatComponent } from './dictaat.component';
-import { DictaatEntryComponent } from './dictaat-entry.component';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { SliderComponent } from './slider/slider.component';
-import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
-import { ContactsComponent } from './contacts/contacts.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes} from '@angular/router';
-import { AboutHomeComponent } from './about-home/about-home.component';
-import { VisionHomeComponent } from './vision-home/vision-home.component';
-import { MissionHomeComponent } from './mission-home/mission-home.component';
-import { OurObjectsHomeComponent } from './our-objects-home/our-objects-home.component';
+import { AboutHomeComponent } from './components/about-home/about-home.component';
+import { VisionHomeComponent } from './components/vision-home/vision-home.component';
+import { MissionHomeComponent } from './components/mission-home/mission-home.component';
+import { OurObjectsHomeComponent } from './components/our-objects-home/our-objects-home.component';
 
-import { VisionComponent } from './vision/vision.component';
-import { MissionComponent } from './mission/mission.component';
-import { InitiativesComponent } from './initiatives/initiatives.component';
-import { FoundersComponent } from './founders/founders.component';
-import { AdvisoryBoardComponent } from './advisory-board/advisory-board.component';
-import { DonateComponent } from './donate/donate.component';
-import { GetInvolvedComponent } from './get-involved/get-involved.component';
+import { VisionComponent } from './components/vision/vision.component';
+import { MissionComponent } from './components/mission/mission.component';
+import { InitiativesComponent } from './components/initiatives/initiatives.component';
+import { FoundersComponent } from './components/founders/founders.component';
+import { AdvisoryBoardComponent } from './components/advisory-board/advisory-board.component';
+import { DonateComponent } from './components/donate/donate.component';
+import { GetInvolvedComponent } from './components/get-involved/get-involved.component';
 
 
 const appRoutes: Routes = [
@@ -60,17 +58,13 @@ const appRoutes: Routes = [
     InitiativesComponent,
     AdvisoryBoardComponent,
     DonateComponent,
-    GetInvolvedComponent,
-    DictaatComponent, 
-    DictaatEntryComponent
+    GetInvolvedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  exports: [DictaatComponent, DictaatEntryComponent]
   providers: [],
   bootstrap: [AppComponent, HeaderComponent, HomeComponent, AboutComponent, AboutHomeComponent, VisionHomeComponent,
   VisionComponent, MissionHomeComponent,
