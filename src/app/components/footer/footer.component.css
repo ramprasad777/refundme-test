@@ -1,0 +1,62 @@
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   padding: 20px 0;
+   width: 100%;
+   background-color: #3f3d3e;
+   color: white;
+   text-align: center;
+}
+.footer a{
+  color:#fff;
+  text-decoration: underline;
+  text-decoration: none;
+}
+.footer a:hover{
+  text-decoration: none;
+  color:#f47822;
+}
+.footerNav{
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  float: left;
+  width:100%;
+}
+.footerNav li{
+  float:left;
+  margin: 0;
+  padding: 0;
+}
+.footerNav li a{
+  padding:5px 20px;
+}
+.footerNav li a:first-child{
+  padding-left:0;
+}
+.footer .socialNav{
+  margin: 0 auto;
+  text-align: center;
+}
+.footer .socialNav ul{
+  float: inherit;
+}
+.footer .socialNav ul li{
+  float:inherit;
+  display: inline-block;
+}
+.footer .socialNav ul li a{
+  padding-top:0;
+}
+.footer .socialNav ul li a:hover, .footer .socialNav ul li a:focus{
+  background:none;
+}
+/*subscribe email form*/
+#mc_embed_signup input{
+  border-radius:0;
+  padding:10px 15px;
+}
+#mc_embed_signup .form-control{
+  height:auto;
+}

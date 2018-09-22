@@ -1,0 +1,162 @@
+.navbar-default{
+  background:rgba(0,0,0,.2);
+}
+.anfLogo{
+  background:#fff;
+  height:auto;
+  position:relative;
+  padding-top:5px;
+  padding-bottom:5px;
+  width:150px;
+}
+.anfLogo:hover{
+  background:#fff;
+}
+.anfLogo img{
+    width:100%;
+}
+.navbar-fixed-top{
+  background:#fff;
+}
+.navbar > .container{
+  position: relative;
+}
+.modal-nav-content {
+  width: 100%;
+  height: auto;
+}
+.modal-nav-content .modal-nav-body {
+  margin-top: 100px;
+}
+.modal-nav-content .modal-nav-body ul {
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.modal-nav-content .modal-nav-body ul li {
+  text-align: center;
+  font-size: 130%;
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.navbar-collapse.in {
+  max-height: 100%;
+}
+
+.navbar-inverse .navbar-nav.menu-two {
+  background: none;
+}
+.navbar-inverse .navbar-nav.menu-two > li > a {
+  color: blue;
+}
+.navbar-inverse .navbar-nav.menu-two > li > a:hover {
+  color: green;
+}
+.icon-bar{
+  background-color:#000!important;
+}
+@media (min-width: 768px) {
+  .navbar > .container{
+    margin-top:-50px;
+  }
+  .anfLogo{
+    width:auto;
+  }
+  .navbar-collapse {
+    float: right;
+    width: auto;
+  }
+
+  .navbar-inverse {
+    border-top: 50px solid #f47822;
+  }
+
+  .navbar-nav:nth-child(2) {
+    margin-top: 10px;
+    clear: both;
+
+  }
+
+  .navbar-nav:nth-child(1) {
+    margin-top: 0;
+  }
+}
+/* .modal-fullscreen */
+.modal-fullscreen {
+  background: transparent;
+}
+.modal-fullscreen .modal-body {
+  background-color: blue;
+  padding: 0;
+}
+.modal-fullscreen .modal-body ul {
+  list-style: none;
+}
+.modal-fullscreen .modal-body .menu-one {
+  padding-top: 15px;
+}
+.modal-fullscreen .modal-body .menu-one li > a {
+  color: white;
+}
+.modal-fullscreen .modal-body .menu-two {
+  padding-top: 15px;
+  background-color: white;
+}
+
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.navbar-nav > a{
+  color:#6c6869;
+  font-size:16px;
+  font-weight:500;
+}
+.navbar-nav a:hover{
+  color:#f47822!important;
+}
+.navbar-nav > .active > a, .navbar-nav > a:hover{
+  color:#f47822;
+  background:none;
+}
+/*Social Nav*/
+.socialNav a{
+  color:#fff!important;
+}
+.socialNav a:hover{
+  color:#fff!important;
+}
+.socialNav .facebookIcon a:hover{
+  background:#3b5998;
+}
+.socialNav .twitterIcon a:hover{
+  background:#55acee;
+}
+.socialNav .linkedInIcon a:hover{
+  background:#0077b5;
+}
+.socialNav .youtubeIcon a:hover{
+  background:#b31217;
+}
