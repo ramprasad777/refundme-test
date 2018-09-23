@@ -22,6 +22,10 @@ a {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -30,7 +34,13 @@ body {
   background-color: #fff; }
 
 p {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px !important; }
+
+.heightlightedText {
+  color: #f47822; }
 
 .carousel {
   margin-bottom: 0 !important; }
@@ -38,16 +48,16 @@ p {
 .bodyContainer {
   text-align: center; }
   .bodyContainer .container {
-    padding: 40px 0;
-    border-top: 1px solid #ccc; }
+    padding: 40px 20px; }
   .bodyContainer .mainHeading {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
     position: relative;
-    padding: 0 0 15px; }
+    padding: 0 0 15px;
+    margin-bottom: 40px; }
     .bodyContainer .mainHeading:after {
       content: '';
-      width: 100px;
+      width: 150px;
       height: 5px;
       background: #f47822;
       position: absolute;
@@ -55,21 +65,90 @@ p {
       right: 0;
       bottom: 0;
       margin: auto; }
-  .bodyContainer .btnMoreInfo {
+  .bodyContainer .btnMoreInfo, .bodyContainer .btnMoreBorder, .bodyContainer .btnMoreWhite {
     padding: 15px 40px;
-    background: #f47822;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 18px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    font-size: 1.3vw;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    margin-top: 30px; }
-    .bodyContainer .btnMoreInfo:hover {
+    font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase; }
+    .bodyContainer .btnMoreInfo:hover, .bodyContainer .btnMoreBorder:hover, .bodyContainer .btnMoreWhite:hover {
       box-shadow: 0 20px 35px -5px rgba(56, 56, 56, 0.4);
+      -moz-box-shadow: 0 20px 35px -5px rgba(56, 56, 56, 0.4);
+      -webkit-box-shadow: 0 20px 35px -5px rgba(56, 56, 56, 0.4); }
+  .bodyContainer .btnMoreInfo {
+    background: #f47822;
+    color: #fff; }
+    .bodyContainer .btnMoreInfo:hover {
       color: #fff; }
+  .bodyContainer .btnMoreBorder {
+    background: #fff;
+    color: #f47822;
+    border: 3px solid #f47822; }
+    .bodyContainer .btnMoreBorder:hover {
+      background: #f47822;
+      color: #fff; }
+  .bodyContainer .btnMoreWhite {
+    background: #fff;
+    color: #f47822; }
+    .bodyContainer .btnMoreWhite:hover {
+      color: #f47822; }
+
+.welcomeMessage {
+  background: url(../images/welcome-bg.jpg) no-repeat center top;
+  background-size: cover; }
+
+.vissionMessage {
+  background: url(../images/vision-bg.jpg) no-repeat right top;
+  background-size: cover; }
+
+.missionMessage {
+  background: url(../images/mission-bg.png) no-repeat center top #f47820;
+  background-size: cover; }
+
+.ourObjectsMessage {
+  background: url(../images/our-objects-bg.png) no-repeat left top;
+  background-size: cover; }
+
+.ourObjectsMessage .container {
+  padding: 0; }
+
+.ourObjectsMessage .container [class*="col"] {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.donatationMessageHome {
+  background: #fff;
+  height: 100%;
+  position: absolute; }
+  .donatationMessageHome .anfLogo {
+    box-shadow: 0 8px 5px -6px rgba(56, 56, 56, 0.18), 0 -8px 5px -6px rgba(56, 56, 56, 0.18);
+    -moz-box-shadow: 0 8px 5px -6px rgba(56, 56, 56, 0.18), 0 -8px 5px -6px rgba(56, 56, 56, 0.18);
+    -webkit-box-shadow: 0 8px 5px -6px rgba(56, 56, 56, 0.18), 0 -8px 5px -6px rgba(56, 56, 56, 0.18);
+    width: 70%;
+    margin: 0 auto 20px;
+    padding: 10px 0; }
+    .donatationMessageHome .anfLogo img {
+      width: 100%; }
+  .donatationMessageHome p {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 40px; }
+  .donatationMessageHome .donate-btn i {
+    color: #cd0100; }
+
+.missionMessage {
+  color: #fff; }
+  .missionMessage .mainHeading:after {
+    content: '';
+    background: #394039; }
 
 @media (min-width: 768px) {
-  .anfLogo {
+  .anfLogo, .donatationMessageHome {
     -webkit-box-shadow: 12px 0 15px -4px rgba(56, 56, 56, 0.18), -12px 0 8px -4px rgba(56, 56, 56, 0.18);
     -moz-box-shadow: 12px 0 15px -4px rgba(56, 56, 56, 0.18), -12px 0 8px -4px rgba(56, 56, 56, 0.18);
     box-shadow: 12px 0 15px -4px rgba(56, 56, 56, 0.18), -12px 0 8px -4px rgba(56, 56, 56, 0.18); } }

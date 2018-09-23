@@ -1,20 +1,22 @@
 $(function () {
     var headerHeight = $('.navbar-fixed-top').height();
+    var ourObjectsMessageSection = $('.ourObjectsMessage').height();
 
-    $('body').css({'padding-top':headerHeight});
-    if(window.width() > 768){
-      $('body').css({'padding-top':headerHeight+50});
-    }else{
-      $('body').css({'padding-top':headerHeight});
+    if ($(window).width() > 768) {
+         $('body').css({'padding-top':headerHeight+50});
+         $('.donatationMessageHome').css({'height':ourObjectsMessageSection});
     }
+    else {
+       $('body').css({'padding-top':headerHeight});
+    }
+    $('body').css({'padding-top':headerHeight});
 
-    //Main Header navigation
-    $(".modal-fullscreen").on('show.bs.modal', function () {
-      setTimeout( function() {
-        $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-      }, 0);
-    });
-    $(".modal-fullscreen").on('hidden.bs.modal', function () {
-      $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-    });
 });
+$(document).ready(function(){
+  $("#navbar").find("li").on("click", "a", function () {
+     $('.navbar-collapse.in').collapse('hide');
+ });
+ if ($(window).width() > 768) {
+    $('.navbar-collapse.in').collapse('show');
+ }
+})

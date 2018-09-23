@@ -8,10 +8,18 @@
    color: white;
    text-align: center;
 }
+.footer p, .footer p a{
+  font-size:14px;
+  color:#7b7a7b;
+}
+.footer p a:hover, .footer p a:focus{
+  color:#fff;
+}
 .footer a{
   color:#fff;
   text-decoration: underline;
   text-decoration: none;
+  font-weight: 700;
 }
 .footer a:hover{
   text-decoration: none;
@@ -25,7 +33,7 @@
   width:100%;
 }
 .footerNav li{
-  float:left;
+  display: inline-block;
   margin: 0;
   padding: 0;
 }
@@ -48,6 +56,7 @@
 }
 .footer .socialNav ul li a{
   padding-top:0;
+  font-size:24px;
 }
 .footer .socialNav ul li a:hover, .footer .socialNav ul li a:focus{
   background:none;
@@ -59,4 +68,15 @@
 }
 #mc_embed_signup .form-control{
   height:auto;
+}
+#mc_embed_signup .button{
+  background:#f47822;
+}
+.text-left{
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .text-left{
+    text-align: left;
+  }
 }

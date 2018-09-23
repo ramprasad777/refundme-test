@@ -1,7 +1,10 @@
 @import 'animations';
 
 a{-webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -ms-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out;}
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -11,6 +14,12 @@ body {
 }
 p{
   font-family: 'Open Sans', sans-serif;
+  font-size:18px;
+  line-height: 24px;
+  margin-bottom:20px!important;
+}
+.heightlightedText{
+  color:#f47822;
 }
 .carousel{
   margin-bottom:0!important;
@@ -18,41 +27,124 @@ p{
 .bodyContainer{
   text-align: center;
   .container{
-    padding:40px 0;
-    border-top:1px solid #ccc;
+    padding:40px 20px;
   }
   .mainHeading{
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
     position: relative;
     padding:0 0 15px;
+    margin-bottom:40px;
     &:after{
       content:'';
-      width:100px;
+      width:150px;
       height:5px;
       background:#f47822;
       position:absolute;
       left:0;right:0; bottom:0; margin:auto;
     }
   }
-  .btnMoreInfo{
+  .btnMoreInfo, .btnMoreBorder, .btnMoreWhite{
     padding:15px 40px;
+    @include border-radius(5px);
+    font-size:1.3vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top:30px;
+    text-transform: uppercase;
+    &:hover{
+      box-shadow: 0 20px 35px -5px rgba(56,56,56,.4);
+      -moz-box-shadow: 0 20px 35px -5px rgba(56,56,56,.4);
+      -webkit-box-shadow: 0 20px 35px -5px rgba(56,56,56,.4);
+    }
+  }
+  .btnMoreInfo{
     background:#f47822;
     color:#fff;
-    text-transform: uppercase;
-    font-size:18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    margin-top:30px;
     &:hover{
-      //box-shadow: 12px 0 15px 15px rgba(56,56,56,.6);
-      box-shadow: 0 20px 35px -5px rgba(56,56,56,.4);
       color:#fff;
     }
   }
+  .btnMoreBorder{
+    background:#fff;
+    color:#f47822;
+    border:3px solid #f47822;
+    &:hover{
+      background:#f47822;
+      color:#fff;
+    }
+  }
+  .btnMoreWhite{
+    background:#fff;
+    color:#f47822;
+    &:hover{
+      color:#f47822;
+    }
+  }
 }
-@media (min-width: 768px) {
+//Start Welcome message
+.welcomeMessage{
+  background:url(../images/welcome-bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+.vissionMessage{
+  background:url(../images/vision-bg.jpg) no-repeat right top;
+  background-size: cover;
+}
+.missionMessage{
+  background:url(../images/mission-bg.png) no-repeat center top #f47820;
+  background-size: cover;
+}
+.ourObjectsMessage{
+  background:url(../images/our-objects-bg.png) no-repeat left top;
+  background-size: cover;
+}
+
+//Start Our Objects
+.ourObjectsMessage .container{
+  padding:0;
+}
+.ourObjectsMessage .container [class*="col"] {
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.donatationMessageHome{
+  background:#fff;
+  height:100%;
+  position:absolute;
   .anfLogo{
+    box-shadow: 0 8px 5px -6px rgba(56,56,56,0.18), 0 -8px 5px -6px rgba(56,56,56,0.18);
+    -moz-box-shadow: 0 8px 5px -6px rgba(56,56,56,0.18), 0 -8px 5px -6px rgba(56,56,56,0.18);
+    -webkit-box-shadow: 0 8px 5px -6px rgba(56,56,56,0.18), 0 -8px 5px -6px rgba(56,56,56,0.18);
+    width:70%;
+    margin:0 auto 20px;
+    padding:10px 0;
+    img{
+      width:100%;
+    }
+  }
+  p{
+    font-size:20px;
+    font-weight: 900;
+    line-height:40px;
+  }
+  .donate-btn i{
+    color:#cd0100;
+  }
+}
+
+.missionMessage{
+  color:#fff;
+  .mainHeading{
+    &:after{
+      content:'';
+      background:#394039;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .anfLogo, .donatationMessageHome{
     -webkit-box-shadow: 12px 0 15px -4px rgba(56,56,56,0.18), -12px 0 8px -4px rgba(56,56,56,0.18);
     -moz-box-shadow: 12px 0 15px -4px rgba(56,56,56,0.18), -12px 0 8px -4px rgba(56,56,56,0.18);
     box-shadow: 12px 0 15px -4px rgba(56,56,56,0.18), -12px 0 8px -4px rgba(56,56,56,0.18);

@@ -1,6 +1,9 @@
 .navbar-default{
   background:rgba(0,0,0,.2);
 }
+.navbar-toggle{
+  margin-top:22px;
+}
 .anfLogo{
   background:#fff;
   height:auto;
@@ -15,33 +18,17 @@
 .anfLogo img{
     width:100%;
 }
+.menu-one a{
+  font-weight: 700;
+  padding:10px;
+  color:#6b696a;
+}
 .navbar-fixed-top{
   background:#fff;
 }
 .navbar > .container{
   position: relative;
 }
-.modal-nav-content {
-  width: 100%;
-  height: auto;
-}
-.modal-nav-content .modal-nav-body {
-  margin-top: 100px;
-}
-.modal-nav-content .modal-nav-body ul {
-  list-style-type: none;
-  color: white;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.modal-nav-content .modal-nav-body ul li {
-  text-align: center;
-  font-size: 130%;
-  padding: 8px;
-  text-transform: uppercase;
-}
-
 .navbar-collapse.in {
   max-height: 100%;
 }
@@ -58,7 +45,7 @@
 .icon-bar{
   background-color:#000!important;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navbar > .container{
     margin-top:-50px;
   }
@@ -72,10 +59,11 @@
 
   .navbar-inverse {
     border-top: 50px solid #f47822;
+    border-bottom:1px solid #dad8d8;
   }
 
   .navbar-nav:nth-child(2) {
-    margin-top: 10px;
+    margin-top: 15px;
     clear: both;
 
   }
@@ -83,51 +71,6 @@
   .navbar-nav:nth-child(1) {
     margin-top: 0;
   }
-}
-/* .modal-fullscreen */
-.modal-fullscreen {
-  background: transparent;
-}
-.modal-fullscreen .modal-body {
-  background-color: blue;
-  padding: 0;
-}
-.modal-fullscreen .modal-body ul {
-  list-style: none;
-}
-.modal-fullscreen .modal-body .menu-one {
-  padding-top: 15px;
-}
-.modal-fullscreen .modal-body .menu-one li > a {
-  color: white;
-}
-.modal-fullscreen .modal-body .menu-two {
-  padding-top: 15px;
-  background-color: white;
-}
-
-.modal-fullscreen .modal-content {
-  background: transparent;
-  border: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.modal-backdrop.modal-backdrop-fullscreen {
-  background: #ffffff;
-}
-
-.modal-backdrop.modal-backdrop-fullscreen.in {
-  opacity: 0.97;
-  filter: alpha(opacity=97);
-}
-
-/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
-.modal-fullscreen .modal-dialog {
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
 }
 .navbar-nav > a{
   color:#6c6869;
@@ -142,8 +85,15 @@
   background:none;
 }
 /*Social Nav*/
+.socialNav{
+  margin: 0 auto;
+  text-align: center;
+}
+.socialNav li{
+  display: inline-block;
+}
 .socialNav a{
-  color:#fff!important;
+  color:#ccc;
 }
 .socialNav a:hover{
   color:#fff!important;
@@ -159,4 +109,35 @@
 }
 .socialNav .youtubeIcon a:hover{
   background:#b31217;
+}
+@media (min-width:1200px){
+  .socialNav a{
+    color:#fff!important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .navbar-nav {
+      margin: 7.5px -15px;
+      width:100%;
+    }
+    .navbar-nav > li{
+      float: initial;
+    }
+    .menu-one > li {
+      position: relative;
+      display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
 }

@@ -1,16 +1,19 @@
 .container {
   background: #FFFFFF;
-  width: 900px;
-  height: 650px;
   margin: 5% auto;
   position: relative;
 }
 .container .map {
-  width: 45%;
+  width: 100%;
   float: left;
+  height:200px;
+}
+.container iframe{
+  width:100%;
+  height:auto;
 }
 .container .contact-form {
-  width: 53%;
+  width: 100%;
   margin-left: 2%;
   float: left;
 }
@@ -46,4 +49,9 @@
   font-weight: 700;
   margin: 2% 8%;
   border: none;
+}
+@media(min-width:768px){
+  .container iframe{
+    height:650px;
+  }
 }

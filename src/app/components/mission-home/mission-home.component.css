@@ -1,0 +1,15 @@
+.subHeading{
+  text-align: center;
+  font-style: italic;
+  font-size:26px;
+  font-weight: 300;
+  position: relative;
+}
+.subHeading:before{
+  content:' “ ';
+  color:#c75705;
+  font-family: "Times New Roman", Times, serif;
+  font-size:86px;
+  position: absolute;
+  left:-50px; top:-25px;
+}
